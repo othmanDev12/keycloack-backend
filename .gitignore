@@ -1,0 +1,54 @@
+# Gradle / IDE / build
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Docker ###
+# Ignore common Docker artifacts
+*.tar
+*.tar.gz
+.env
+.env.local
+
+# Ignore everything under docker/ but keep pgdata and only compose.yaml
+docker/*
+!docker/pgdata/
+!docker/pgdata/**
+!docker/compose.yaml
+
+# Keep repository root files tracked
+!Dockerfile
+!HELP.md
